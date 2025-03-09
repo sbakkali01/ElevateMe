@@ -1,19 +1,13 @@
-
-class Elevator:
-    min_floor=0
-    max_floor=4
-    current_floor=None
-    # capacity=1
-
-    def __init__(self):
-        self.current_floor=0
-
-class Person:
-    current_floor=None
-    direction:int=None
-
+from elevator import Elevator
+from person import Person
 
 
 if __name__ == '__main__':
-    print('PyCharm')
+    elevator=Elevator()
+    print(elevator,"\n")
+    person1=Person(1,2)
+    print(person1,"\n")
+    elevator.lift_person(person1)
+    print(elevator,"\n")
+    print(person1)
 
